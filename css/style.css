@@ -1,0 +1,77 @@
+body{
+    margin: 1%;
+    padding: 1%;
+    font-size: 125%;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+
+h1{ 
+    background-color: rgb(185, 233, 255);
+    text-align: center;
+    font-size: 2em;
+}
+
+nav{
+    background-color:rgb(185, 233, 255);
+    /* display: flex; */
+    /* text-align: left;
+    flex-direction: row; */
+}
+
+nav a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: blue;
+}
+
+#current {
+    background-color: white;
+    text-decoration: underline;
+}
+
+a.skip{
+    left: 0px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+}
+
+a.skip:focus{
+   position: absolute;
+   top: 0px;
+    
+}
+
+footer{
+    bottom: 0;
+    background-color:rgb(185, 233, 255);
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(13, 1fr) 1fr;
+}
+
+
+/* .Talia{
+    justify-content: center;
+} */
+
+/* .contact_main{
+    background-image: url("../images/backstage-bw.jpeg");
+} */
+
+/* @media all and (min-width:600px){ 
+
+.intropage{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr
+}
+} */
