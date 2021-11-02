@@ -13,9 +13,10 @@ h1{
 
 nav{
     background-color:rgb(185, 233, 255);
-    /* display: flex; */
-    /* text-align: left;
-    flex-direction: row; */
+    /* text-align: left; */
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
 }
 
 nav a{
@@ -57,6 +58,25 @@ footer{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(13, 1fr) 1fr;
 }
+
+/* .intropage{
+    position: relative;
+    text-align: center;
+}
+
+.aboutCadence{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+} 
+
+.smallGroup{
+    opacity: 0.5;
+    border: solid 3px black;
+} */
+
+
+
 
 
 /* .Talia{
