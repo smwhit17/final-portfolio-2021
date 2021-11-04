@@ -3,18 +3,26 @@ body{
     padding: 1%;
     font-size: 125%;
     font-family: 'Josefin Sans', sans-serif; 
+    background-color: black;
+    color: white;
+    text-align: center;
 }
+
+p{
+    padding: 10px;
+}
+
+header{
+    background-color: rgb(185, 233, 255);
+}
+
 
 h1{ 
-    background-color: rgb(185, 233, 255);
+    /* background-color: grey; */
     text-align: center;
     font-size: 2em;
-}
-
-nav{
-    background-color:rgb(185, 233, 255);
-    /* text-align: left; */
-    
+    color: black;
+    padding: 5px;
 }
 
 ul {
@@ -36,6 +44,9 @@ a:visited{
     background-color: white;
     text-decoration: underline;
 }
+#current::after{
+    content: "\1F483";
+}
 
 a.skip{
     left: 0px;
@@ -56,33 +67,78 @@ footer{
     bottom: 0;
     background-color:rgb(185, 233, 255);
     text-align: center;
+    color: black;
 }
 
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(12, 1fr) 1fr;
+    width: 97%;
+    margin: auto;
+    grid-gap:15px;
 }
+
+.grid-container img{
+    border-radius: 10px;
+}
+
+
 .Talia{
     grid-column: 1 / -1;
-    
+    justify-self: center;
+    width: 50%;
 }
 .showVideo {
     border: solid 2px rgb(185, 233, 255);
 }
 
+#name, #email, #message{
+    color: grey;
+}
+
+.contactForm {
+    border-radius: 5px;
+    justify-self: center;
+    padding: 20px;
+  }
+
+/* .caption */
 /* .intropage{
     position: relative;
     text-align: center;
-}
+/* } */
 
 .aboutCadence{
     position: absolute;
-    top: 50%;
-    left: 50%;
-} 
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, .65);
+    padding: 30px;
+    align-self: center;
+    color: black;
+}  
 
-.smallGroup{
+h2{
+    font-size: 125%;
+    padding: 10px;
+    text-align: center;
+}
+.disclaimer{
+    font-size: 75%;
+}
+
+.videos2020 {
+    display: grid;
+    
+}
+
+
+/* .2020videos iframe{
+    display: flex;
+} */
+
+ 
+/* .smallGroup{
     opacity: 0.5;
     border: solid 3px black;
 } */
@@ -105,6 +161,10 @@ footer{
     flex-direction: row; 
     justify-content: space-around;
 }
+
+.grid-container img:hover{
+    opacity: 0.75;
+}
 /* .intropage{
     display: grid;
     grid-template-columns: 1fr;
@@ -120,7 +180,6 @@ footer{
         text-align: left;
     }
     ul {
-        flex-direction: row; 
         justify-content: space-around;
     }
 }
