@@ -109,14 +109,19 @@ footer{
     text-align: center;
 /* } */
 
+/* .introPage{
+    position: relative;
+    text-align: center;
+} */
 .aboutCadence{
     position: absolute;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, .65);
     padding: 30px;
-    align-self: center;
     color: black;
 }  
+
+
 
 h2{
     font-size: 125%;
@@ -129,9 +134,34 @@ h2{
 
 .videos2020 {
     display: grid;
-    
 }
 
+.videos2021{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.resolution{
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+}
+.resolutionCaption{
+    grid-column: 2 / span 1;
+    grid-row: 1/ span 1;
+    align-self: center;
+}
+
+.youtubeButton{
+    background-color:rgb(185, 233, 255) ;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
 
 /* .2020videos iframe{
     display: flex;
@@ -160,11 +190,11 @@ h2{
     ul {
     flex-direction: row; 
     justify-content: space-around;
-}
+    }
 
-.grid-container img:hover{
+    .grid-container img:hover{
     opacity: 0.75;
-}
+    }
 /* .intropage{
     display: grid;
     grid-template-columns: 1fr;
